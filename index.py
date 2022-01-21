@@ -646,7 +646,7 @@ def sendallrestReport():
     clickButton(teasureHunt_icon_img)
     sleep(5, 15)    
     clickButton(x_button_img)
-    logger('All resting report sent', telegram=True, emoji='📄')
+    logger('All resting report sent', telegram=False, emoji='📄')
 
 #INTEGRATION WITH BTS HERALD - GET A NOTIFICATION IF THE BOT STOPS | https://herald.btscenter.net
 def herald():
@@ -985,7 +985,7 @@ def login():
         handleError()
 
     if currentScreen() == "main":
-        logger(afkapp_bcbot_38, telegram=True, emoji='🎉')
+        logger(afkapp_bcbot_38, telegram=False, emoji='🎉')
         time.sleep(5)
         return True
     else:
