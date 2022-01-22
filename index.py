@@ -1313,7 +1313,6 @@ def main():
     checkUpdates()
     #input('Press Enter to start the bot...\n')
     logger('Starting bot...', telegram=True, emoji='🤖')
-    logger(afkapp_bcbot_63, telegram=True, emoji='ℹ️')
 
     if multi_account != True and os.name == 'nt':
         bcbotsingle() 
